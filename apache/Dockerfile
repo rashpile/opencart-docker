@@ -21,6 +21,7 @@ RUN usermod -u 1000 www-data
 RUN a2enmod rewrite
 
 ADD apache2.conf /etc/apache2/apache2.conf
+ADD 000-default.conf /etc/apache2/sites-enabled/000-default.conf
 
 WORKDIR /var/www/opencart
 
